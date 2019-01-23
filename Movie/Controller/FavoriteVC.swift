@@ -71,6 +71,7 @@ class FavoriteVC: UIViewController {
             detaildMovieVC.movie    = self.movieSelected!
             detaildMovieVC.movieID  = self.movieSelected!["id"].intValue
             detaildMovieVC.getCast()
+            detaildMovieVC.getSimilarMovies()
         }
     }
 }
