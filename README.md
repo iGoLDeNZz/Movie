@@ -5,20 +5,20 @@
 This is an assignment handed to me on the 15th January 2019 to evaluate my knowledge on using API calls, handling lists and different data-structures, my coding logic and solving problem. I was presented with a various options on how I would like to implement my solution for the problem, I selected the 'iOS' path using swift language.
 
 ### In This document I will explain:
-	*How to Install the app on your iDevice
-	*The content of the project and how I implement each one of them.
-	*The approach that I took on solving the problem and why
-	*Some key feature of the app 
-	*Area's the could have been improved with more time
+* How to Install the app on your iDevice
+* The content of the project and how I implement each one of them.
+* The approach that I took on solving the problem and why
+* Some key feature of the app 
+* Area's the could have been improved with more time
 
  
 ## Requirements
-1.For installing:
-..+iOS 11.1+
-2.For editing the code:
-..+Xcode 10.1+
-..+Swift 4.2+
-..+MacOS system
+1. For installing:
+..+ iOS 11.1+
+2. For editing the code:
+..+ Xcode 10.1+
+..+ Swift 4.2+
+..+ MacOS system
 
 ## Installation
 Go to the following repository: [Movie](https://github.com/iGoLDeNZz/Movie)
