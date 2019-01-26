@@ -14,11 +14,11 @@ This is an assignment handed to me on the 15th January 2019 to evaluate my knowl
  
 ## Requirements
 1. For installing:
-..+ iOS 11.1+
+..* iOS 11.1+
 2. For editing the code:
-..+ Xcode 10.1+
-..+ Swift 4.2+
-..+ MacOS system
+..* Xcode 10.1+
+..* Swift 4.2+
+..* MacOS system
 
 ## Installation
 Go to the following repository: [Movie](https://github.com/iGoLDeNZz/Movie)
