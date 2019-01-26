@@ -74,7 +74,9 @@ The classes are separated as follows
 The assessment document as well as the TMDb API documentation were user as a guide lines on implementing the solution. However, there was some points were left unexplained perhaps to leave room for creativity i.e. one of the stories that the document state's that *"As a user, I can see the latest movies."* and the API allows you to search movies on either one of these three options:
 
 a.	`Most popular movies`
+
 b.	`Top rated movies`
+
 c.	`Latest movie`
 
 Even-though the document stated *`latest movies`* on the requirement, it was not very stable from the API side, since it mostly returns one movie at a time. And that movie is so new that it has most of its data missing/null. Such as no detailed information about the movie, no description and cast team. So I decided to implement `a` and `b` only.
@@ -83,7 +85,9 @@ Even-though the document stated *`latest movies`* on the requirement, it was not
 
 ### Cocoapods
    pods are libraries in swift and I used some of them in this project. Such as
-    * `Alamofire` 
+   
+   * `Alamofire` 
+    
        Alamofire is an HTTP networking library written in Swift
        
    * `SwiftyJSON`
@@ -96,38 +100,55 @@ Even-though the document stated *`latest movies`* on the requirement, it was not
    
    
 ## Features
-1.	Implementing persistent data
-I used "UserDefault" that is provided from the swift language to save certain data on phone memory to be accessible at all times. Such as:
 
-*	isLoggedin (Boolean): Track user login status
-*	SessionID (String): user sessionID 
-*	favoriteMovieList (JSON): a dictionary with all favorite movies of the user
-*	requestToken(String): latest request token
+1.	Implementing persistent data
+
+   I used "UserDefault" that is provided from the swift language to save certain data on phone memory to be accessible at all times. Such as:
+
+    *	`isLoggedin` *Boolean*: Track user login status
+    
+    *	`SessionID` *String*: user sessionID 
+    
+    *	`favoriteMovieList` *JSON*: a dictionary with all favorite movies of the user
+    
+    *	`requestToken` *String*: latest request token
 
 2.	Validate user input
-The app checks the user input in the search bar as another layer of security to not let a user inject some query in the search since it will be used to form the URL that will be sent to the API such as:
 
-i.	'&' sign: The app won't allow the user to put '&' as an input in the search bar as it will crash any app that user the same API without handling this problem
-ii.	Spaces: normally a white space will sometimes crash the apps or at best will be ignored and won't make it to the search query. But the app replaces each space with '%20' so the browser/server understands the query
+     The app checks the user input in the search bar as another layer of security to not let a user inject some query in the search since it will be used to form the URL that will be sent to the API such as:
+
+     i.	`'&' sign`: The app won't allow the user to put '&' as an input in the search bar as it will crash any app that user the same API without handling this problem
+     
+     ii.	`Spaces`: normally a white space will sometimes crash the apps or at best will be ignored and won't make it to the search query. But the app replaces each space with `%20` so the browser/server understands the query
 
 3.	Using extension
-I used extension to prevent redundancy and reuse the code and in force generic functions arguments, so it can be used multiple times and by many controllers. Also using the same model of movie cell in both favoriteVC and homeVC
+
+     I used extension to prevent redundancy and reuse the code and in force generic functions arguments, so it can be used multiple times and by many controllers. Also using the same model of movie cell in both favoriteVC and homeVC
+     
 4.	Supports Landscape
-The constraints and auto layout are perfectly set to support portrait as well as landscape throughout the app
+
+     The constraints and auto layout are perfectly set to support portrait as well as landscape throughout the app
+     
 5.	Micro features
-i.	To enhance the UI/UX be letting it easy to identify high rating movies. The app colors the rating label based on how high the rating is going from red for low rating, yellow for medium, and green for high rating. 
-ii.	Implanting swipe to delete in favorite movies to allow for the native feel of the iOS as well as providing a button.
-iii.	Since The cannot predict how long the description of a movie is it has a built-in function that dynamically determine the right size of a label and set that label with the right height constraint.
+
+     i.	To enhance the UI/UX be letting it easy to identify high rating movies. The app colors the rating label based on how high the rating is going from red for low rating, yellow for medium, and green for high rating. 
+     
+     ii.	Implanting swipe to delete in favorite movies to allow for the native feel of the iOS as well as providing a button.
+
+     iii.	Since The cannot predict how long the description of a movie is it has a built-in function that dynamically determine the right size of a label and set that label with the right height constraint.
 
 ## Arguments 
 Some argue about the decisions about some data structures or such that I have taken in the app. One argument is:
+
 o	Using one data structure for both popular movies and top-rated movies. 
-The reason I took that approach is that with the help of " SDWebImage" cashing some of the images in both categories Even if the request took a bit more time the images will still be cashed and presented immediately. And the list must be refreshed each time the user tap on one of them since the list updates regularly by the API provider. 
+
+   The reason I took that approach is that with the help of `SDWebImage` cashing some of the images in both categories Even if the request took a bit more time the images will still be cashed and presented immediately. And the list must be refreshed each time the user tap on one of them since the list updates regularly by the API provider. 
 
 ## improvements
 Areas that the app can be improved in if there was more time to be spent on developing the app.
-o	Using " DispatchQueue" for managing all the asynchronous thread to fetch the data then load the UI
 
-o	Disabling the buttons in HomeVC for the movie that has been added to favorite using closures and delegates 
+     o	Using `DispatchQueue` for managing all the asynchronous thread to fetch the data then load the UI
 
-o	Making the user able to see the details of the similar movies making it invoke a segue to its own view 
+     o	Disabling the buttons in `HomeVC` for the movie that has been added to favorite using closures and delegates 
+
+     o	Making the user able to see the details of the similar movies making it invoke a segue to its own view 
