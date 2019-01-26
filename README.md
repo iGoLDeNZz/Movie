@@ -35,15 +35,12 @@ Then clone or download the project. If you chose to download the project extract
 The project follows the Model View Controller (MVC) design for separating the code and for nicer and readable code.
 The classes are separated as follows
 ### Models
-   * MovieCell:
+   * `MovieCell`: A model used to populate the cells in table view in HomeVC and FavoriteVC
    
-     A model used to populate the cells in table view in HomeVC and FavoriteVC
-   * CastCell:
+   * `CastCell`: A model used to populate the cells in a collection view for all the cast in a certain movie in MovieDetails 
    
-     A model used to populate the cells in a collection view for all the cast in a certain movie in MovieDetails 
-   * SimilarMovieCell:
+   * `SimilarMovieCell`: A model used to populate the cells in a collection view for all the similar movies to a certain movie in MovieDetails 
    
-     A model used to populate the cells in a collection view for all the similar movies to a certain movie in MovieDetails 
 ### View
 
    * UILabel
