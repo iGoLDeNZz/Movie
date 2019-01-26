@@ -36,34 +36,38 @@ The project follows the Model View Controller (MVC) design for separating the co
 The classes are separated as follows
 ### Models
    * MovieCell:
-A model used to populate the cells in table view in HomeVC and FavoriteVC
+   
+    A model used to populate the cells in table view in HomeVC and FavoriteVC
    * CastCell:
-A model used to populate the cells in a collection view for all the cast in a certain movie in MovieDetails 
+   
+    A model used to populate the cells in a collection view for all the cast in a certain movie in MovieDetails 
    * SimilarMovieCell:
-A model used to populate the cells in a collection view for all the similar movies to a certain movie in MovieDetails 
+   
+    A model used to populate the cells in a collection view for all the similar movies to a certain movie in MovieDetails 
 ### View
 
-   * UILabel:
+   * UILabel
 
-An extension of UILabel has one property that allow you to dynamically set the height of a label based on the amount of text it has
+      An extension of UILabel has one property that allow you to dynamically set the height of a label based on the amount of text it has
 
    * MotionViewEffect:
 
-An extension of UIVeiwController that implement a function that allows you to apply a motion effect when moving the phone around. -it was used in "MovieDetails" on the header poster-
+      An extension of `UIVeiwController` that implement a function that allows you to apply a motion effect when moving the phone around. *it was used in `MovieDetails` on the header poster*
 ### Controller
-   * HomeVC:
-Here is the landing page and where you can (search a movie, look at the most popular/top rated movies, and add movies to your favorite)
+   * HomeVC
+   
+      Here is the landing page and where you can (search a movie, look at the most popular/top rated movies, and add movies to your favorite)
 
-   * LoginVC:
+   * LoginVC
 
-Here is where the user will be directed to TMDb website, so they can login/register then Authorize the app to access their favorite movies list.
+      Here is where the user will be directed to TMDb website, so they can login/register then Authorize the app to access their favorite movies list.
 
    * MovieDetails:
 Here the user can see more details about a certain movie with the cast of the movie, similar movies, and you can also share the movie link to IMDb 
    * FavoriteVC:
 Here the user can see and edit their own favorite movies  
 
-Approach 
+## Approach 
 The assessment document as well as the TMDb API documentation were user as a guide lines on implementing the solution. However, there was some points were left unexplained perhaps to leave room for creativity i.e. one of the stories that the document state's that " As a user, I can see the latest movies." and the API allows you to search movies on either one of these three options:
 a.	Most popular movies
 b.	Top rated movies
@@ -99,12 +103,12 @@ i.	To enhance the UI/UX be letting it easy to identify high rating movies. The a
 ii.	Implanting swipe to delete in favorite movies to allow for the native feel of the iOS as well as providing a button.
 iii.	Since The cannot predict how long the description of a movie is it has a built-in function that dynamically determine the right size of a label and set that label with the right height constraint.
 
-Arguments 
+## Arguments 
 Some argue about the decisions about some data structures or such that I have taken in the app. One argument is:
 o	Using one data structure for both popular movies and top-rated movies. 
 The reason I took that approach is that with the help of " SDWebImage" cashing some of the images in both categories Even if the request took a bit more time the images will still be cashed and presented immediately. And the list must be refreshed each time the user tap on one of them since the list updates regularly by the API provider. 
 
-improvements
+## improvements
 Areas that the app can be improved in if there was more time to be spent on developing the app.
 o	Using " DispatchQueue" for managing all the asynchronous thread to fetch the data then load the UI
 
