@@ -2,7 +2,7 @@
 
 
 ## Introduction
-This is an assignment handed to me on the 15th January 2019 to evaluate my knowledge on using API calls, handling lists and different data-structures, my coding logic and solving problem. I was presented with a various options on how I would like to implement my solution for the problem, I selected the 'iOS' path using swift language.
+This is an assignment handed to me on the 15th January 2019 to evaluate my knowledge on using API calls, handling lists and different data-structures, my coding logic and solving problem. I was presented with a various options on how I would like to implement my solution for the problem, I selected the `iOS` path using swift language.
 
 ### In This document I will explain:
 * How to Install the app on your iDevice
@@ -43,29 +43,17 @@ The classes are separated as follows
    
 ### View
 
-   * UILabel
+   * `UILabel`: An extension of UILabel has one property that allow you to dynamically set the height of a label based on the amount of text it has
 
-      An extension of UILabel has one property that allow you to dynamically set the height of a label based on the amount of text it has
-
-   * MotionViewEffect:
-
-      An extension of `UIVeiwController` that implement a function that allows you to apply a motion effect when moving the phone around. *it was used in `MovieDetails` on the header poster*
+   * `MotionViewEffect`: An extension of `UIVeiwController` that implement a function that allows you to apply a motion effect when moving the phone around. *it was used in `MovieDetails` on the header poster*
 ### Controller
-   * HomeVC
-   
-      Here is the landing page and where you can (search a movie, look at the most popular/top rated movies, and add movies to your favorite)
+   * `HomeVC`: Here is the landing page and where you can (search a movie, look at the most popular/top rated movies, and add movies to your favorite)
 
-   * LoginVC
+   * `LoginVC`: Here is where the user will be directed to TMDb website, so they can login/register then Authorize the app to access their favorite movies list.
 
-      Here is where the user will be directed to TMDb website, so they can login/register then Authorize the app to access their favorite movies list.
-
-   * MovieDetails
-   
-      Here the user can see more details about a certain movie with the cast of the movie, similar movies, and you can also share the movie link to IMDb 
+   * `MovieDetails`: Here the user can see more details about a certain movie with the cast of the movie, similar movies, and you can also share the movie link to IMDb 
       
-   * FavoriteVC
-   
-      Here the user can see and edit their own favorite movies  
+   * `FavoriteVC`: Here the user can see and edit their own favorite movies  
 
 ## Approach 
 The assessment document as well as the TMDb API documentation were user as a guide lines on implementing the solution. However, there was some points were left unexplained perhaps to leave room for creativity i.e. one of the stories that the document state's that *"As a user, I can see the latest movies."* and the API allows you to search movies on either one of these three options:
@@ -87,7 +75,7 @@ Even-though the document stated *`latest movies`* on the requirement, it was not
        
    * `SwiftyJSON` SwiftyJSON makes it easy to deal with JSON data in Swift. Such as parsing the json
       
-   * `SDWebImage`This library provides an asynchronous image downloader with cache support. This provides a place holder until the image downloads and caches the images for faster load time.
+   * `SDWebImage` This library provides an asynchronous image downloader with cache support. This provides a place holder until the image downloads and caches the images for faster load time.
    
    
 ## Features
