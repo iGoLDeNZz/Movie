@@ -37,13 +37,13 @@ The classes are separated as follows
 ### Models
    * MovieCell:
    
-    A model used to populate the cells in table view in HomeVC and FavoriteVC
+     A model used to populate the cells in table view in HomeVC and FavoriteVC
    * CastCell:
    
-    A model used to populate the cells in a collection view for all the cast in a certain movie in MovieDetails 
+     A model used to populate the cells in a collection view for all the cast in a certain movie in MovieDetails 
    * SimilarMovieCell:
    
-    A model used to populate the cells in a collection view for all the similar movies to a certain movie in MovieDetails 
+     A model used to populate the cells in a collection view for all the similar movies to a certain movie in MovieDetails 
 ### View
 
    * UILabel
@@ -62,31 +62,47 @@ The classes are separated as follows
 
       Here is where the user will be directed to TMDb website, so they can login/register then Authorize the app to access their favorite movies list.
 
-   * MovieDetails:
-Here the user can see more details about a certain movie with the cast of the movie, similar movies, and you can also share the movie link to IMDb 
-   * FavoriteVC:
-Here the user can see and edit their own favorite movies  
+   * MovieDetails
+   
+      Here the user can see more details about a certain movie with the cast of the movie, similar movies, and you can also share the movie link to IMDb 
+      
+   * FavoriteVC
+   
+      Here the user can see and edit their own favorite movies  
 
 ## Approach 
-The assessment document as well as the TMDb API documentation were user as a guide lines on implementing the solution. However, there was some points were left unexplained perhaps to leave room for creativity i.e. one of the stories that the document state's that " As a user, I can see the latest movies." and the API allows you to search movies on either one of these three options:
-a.	Most popular movies
-b.	Top rated movies
-c.	Latest movie
-Even-though the document stated "latest movies" on the requirement, it was not very stable from the API side, since it mostly returns one movie at a time. And that movie is so new that it has most of its data missing/null. Such as no detailed information about the movie, no description and cast team. So I decided to implement 'a' and 'b' only.
+The assessment document as well as the TMDb API documentation were user as a guide lines on implementing the solution. However, there was some points were left unexplained perhaps to leave room for creativity i.e. one of the stories that the document state's that *"As a user, I can see the latest movies."* and the API allows you to search movies on either one of these three options:
+
+a.	`Most popular movies`
+b.	`Top rated movies`
+c.	`Latest movie`
+
+Even-though the document stated *`latest movies`* on the requirement, it was not very stable from the API side, since it mostly returns one movie at a time. And that movie is so new that it has most of its data missing/null. Such as no detailed information about the movie, no description and cast team. So I decided to implement `a` and `b` only.
 
 
 
-Cocoapods: pods are libraries in swift and I used some of them in this project. Such as
-i.	Alamofire: Alamofire is an HTTP networking library written in Swift
-ii.	SwiftyJSON: SwiftyJSON makes it easy to deal with JSON data in Swift. Such as parsing the json
-iii.	SDWebImage: This library provides an asynchronous image downloader with cache support. This provides a place holder until the image downloads and caches the images for faster load time.
- Features
+### Cocoapods
+   pods are libraries in swift and I used some of them in this project. Such as
+    * `Alamofire` 
+       Alamofire is an HTTP networking library written in Swift
+       
+   * `SwiftyJSON`
+      
+      SwiftyJSON makes it easy to deal with JSON data in Swift. Such as parsing the json
+      
+   * `SDWebImage`
+   
+   This library provides an asynchronous image downloader with cache support. This provides a place holder until the image downloads and caches the images for faster load time.
+   
+   
+## Features
 1.	Implementing persistent data
 I used "UserDefault" that is provided from the swift language to save certain data on phone memory to be accessible at all times. Such as:
-•	isLoggedin (Boolean): Track user login status
-•	SessionID (String): user sessionID 
-•	favoriteMovieList (JSON): a dictionary with all favorite movies of the user
-•	requestToken(String): latest request token
+
+*	isLoggedin (Boolean): Track user login status
+*	SessionID (String): user sessionID 
+*	favoriteMovieList (JSON): a dictionary with all favorite movies of the user
+*	requestToken(String): latest request token
 
 2.	Validate user input
 The app checks the user input in the search bar as another layer of security to not let a user inject some query in the search since it will be used to form the URL that will be sent to the API such as:
