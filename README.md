@@ -17,8 +17,8 @@ This is an assignment handed to me on the 15th January 2019 to evaluate my knowl
     * iOS 11.1+
 * For editing the code:
     * Xcode 10.1+
-     * Swift 4.2+
-      * MacOS system
+    * Swift 4.2+
+    * MacOS system
 
 ## Installation
 Go to the following repository: [Movie](https://github.com/iGoLDeNZz/Movie)
@@ -35,32 +35,32 @@ Then clone or download the project. If you chose to download the project extract
 The project follows the Model View Controller (MVC) design for separating the code and for nicer and readable code.
 The classes are separated as follows
 ### Models
-     * MovieCell:
+   * MovieCell:
 A model used to populate the cells in table view in HomeVC and FavoriteVC
-     * CastCell:
+   * CastCell:
 A model used to populate the cells in a collection view for all the cast in a certain movie in MovieDetails 
-     * SimilarMovieCell:
+   * SimilarMovieCell:
 A model used to populate the cells in a collection view for all the similar movies to a certain movie in MovieDetails 
 ### View
 
-     * UILabel:
+   * UILabel:
 
 An extension of UILabel has one property that allow you to dynamically set the height of a label based on the amount of text it has
 
-     * MotionViewEffect:
+   * MotionViewEffect:
 
 An extension of UIVeiwController that implement a function that allows you to apply a motion effect when moving the phone around. -it was used in "MovieDetails" on the header poster-
 ### Controller
-     * HomeVC:
+   * HomeVC:
 Here is the landing page and where you can (search a movie, look at the most popular/top rated movies, and add movies to your favorite)
 
-     * LoginVC:
+   * LoginVC:
 
 Here is where the user will be directed to TMDb website, so they can login/register then Authorize the app to access their favorite movies list.
 
-     * MovieDetails:
+   * MovieDetails:
 Here the user can see more details about a certain movie with the cast of the movie, similar movies, and you can also share the movie link to IMDb 
-     * FavoriteVC:
+   * FavoriteVC:
 Here the user can see and edit their own favorite movies  
 
 Approach 
