@@ -14,9 +14,9 @@ This is an assignment handed to me on the 15th January 2019 to evaluate my knowl
  
 ## Requirements
 * For installing:
-      * iOS 11.1+
+ * iOS 11.1+
 * For editing the code:
-      * Xcode 10.1+
+ * Xcode 10.1+
       * Swift 4.2+
       * MacOS system
 
