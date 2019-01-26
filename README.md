@@ -1,10 +1,10 @@
 # Movie
 
 
-##Introduction
+## Introduction
 This is an assignment handed to me on the 15th January 2019 to evaluate my knowledge on using API calls, handling lists and different data-structures, my coding logic and solving problem. I was presented with a various options on how I would like to implement my solution for the problem, I selected the 'iOS' path using swift language.
 
-###In This document I will explain:
+### In This document I will explain:
 	*How to Install the app on your iDevice
 	*The content of the project and how I implement each one of them.
 	*The approach that I took on solving the problem and why
@@ -12,7 +12,7 @@ This is an assignment handed to me on the 15th January 2019 to evaluate my knowl
 	*Area's the could have been improved with more time
 
  
-##Requirements
+## Requirements
 For installing:
 *	iOS 11.1+
 For editing the code:
@@ -20,33 +20,33 @@ For editing the code:
 *	Swift 4.2+
 *	MacOS system
 
-##Installation
+## Installation
 Go to the following repository: [Movie](https://github.com/iGoLDeNZz/Movie)
 Then clone or download the project. If you chose to download the project extract the Zip file and open the Movie.xcworkspace file inside the Movie folder with xCode.
 
 
-###You can build the application on your device by 
+### You can build the application on your device by 
 1.	Plugging in your device to your Mac
 2.	Open Movie.xcworkspace
 3.	Press on the project name then sign with you’re apple ID
 4.	Run the App 
 
-##Content
+## Content
 	The project follows the Model View Controller (MVC) design for separating the code and for nicer and readable code.
 The classes are separated as follows
-	###Models
+	### Models
 -MovieCell
 A model used to populate the cells in table view in HomeVC and FavoriteVC
 -CastCell
 A model used to populate the cells in a collection view for all the cast in a certain movie in MovieDetails 
 -SimilarMovieCell
 A model used to populate the cells in a collection view for all the similar movies to a certain movie in MovieDetails 
-	###View
+	### View
 -UILabel
 An extension of UILabel has one property that allow you to dynamically set the height of a label based on the amount of text it has
 -MotionViewEffect
 An extension of UIVeiwController that implement a function that allows you to apply a motion effect when moving the phone around. -it was used in "MovieDetails" on the header poster-
-	###Controller
+	### Controller
 -HomeVC
 Here is the landing page and where you can (search a movie, look at the most popular/top rated movies, and add movies to your favorite)
 
