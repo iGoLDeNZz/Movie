@@ -13,12 +13,12 @@ This is an assignment handed to me on the 15th January 2019 to evaluate my knowl
 
  
 ## Requirements
-For installing:
-*	iOS 11.1+
-For editing the code:
-*	Xcode 10.1+
-*	Swift 4.2+
-*	MacOS system
+1.For installing:
+..+iOS 11.1+
+2.For editing the code:
+..+Xcode 10.1+
+..+Swift 4.2+
+..+MacOS system
 
 ## Installation
 Go to the following repository: [Movie](https://github.com/iGoLDeNZz/Movie)
@@ -32,7 +32,7 @@ Then clone or download the project. If you chose to download the project extract
 4.	Run the App 
 
 ## Content
-	The project follows the Model View Controller (MVC) design for separating the code and for nicer and readable code.
+The project follows the Model View Controller (MVC) design for separating the code and for nicer and readable code.
 The classes are separated as follows
 ### Models
 -MovieCell
