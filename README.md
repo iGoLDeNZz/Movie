@@ -27,26 +27,26 @@ Then clone or download the project. If you chose to download the project extract
 
 ### You can build the application on your device by 
 1.	Plugging in your device to your Mac
-2.	Open Movie.xcworkspace
+2.	Open `Movie.xcworkspace`
 3.	Press on the project name then sign with you’re apple ID
 4.	Run the App 
 
 ## Content
 	The project follows the Model View Controller (MVC) design for separating the code and for nicer and readable code.
 The classes are separated as follows
-	### Models
+### Models
 -MovieCell
 A model used to populate the cells in table view in HomeVC and FavoriteVC
 -CastCell
 A model used to populate the cells in a collection view for all the cast in a certain movie in MovieDetails 
 -SimilarMovieCell
 A model used to populate the cells in a collection view for all the similar movies to a certain movie in MovieDetails 
-	### View
+### View
 -UILabel
 An extension of UILabel has one property that allow you to dynamically set the height of a label based on the amount of text it has
 -MotionViewEffect
 An extension of UIVeiwController that implement a function that allows you to apply a motion effect when moving the phone around. -it was used in "MovieDetails" on the header poster-
-	### Controller
+### Controller
 -HomeVC
 Here is the landing page and where you can (search a movie, look at the most popular/top rated movies, and add movies to your favorite)
 
